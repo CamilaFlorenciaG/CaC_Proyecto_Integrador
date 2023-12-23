@@ -97,7 +97,7 @@
     flex-direction: column;
     align-items: center; }
     
-  .carrito__container__cantidad__controles button {
+  .carrito__container__cantidad__controles .item__quantity {
     background-color: #f24e1e;
     color: var(--light-font-solid);
     width: 18px;
@@ -107,8 +107,20 @@
     justify-content: center;
     font-size: var(--font-medium);
     border: none; }
+
+    .carrito__container__cantidad__controles button {
+      background-color: #f24e1e;
+      color: var(--light-font-solid);
+      width: 18px;
+      height: 16px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: var(--font-medium);
+      border: none; }
+    
   
-  .controles {
+  .item__quantity{
     margin-bottom: 4px; }
     
   .carrito__container__precio {
@@ -207,8 +219,10 @@
     width: 17.5rem;
     cursor: pointer;
     }
+
+
   
-    @import url('index.css'); 
+
 
       
    

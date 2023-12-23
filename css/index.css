@@ -17,12 +17,14 @@
 /* COMPONENTS */
 @import url('slider.css');
 
+
 /* PAGES */
 @import url('shop.css');
 @import url('./admin/admin.css');
 @import url('admin/register.css');
 @import url('admin/create.css');
 @import url('contacto.css');
+@import url('admin/item.css');
 
 
 

@@ -93,18 +93,22 @@
           <div class="item-detalle">
             <p class="item-detalle-titulo">PIDGEOTTO</p>
             <p class="item-detalle-licencia">POKEMON</p>
-            <p class="item-detalle-precio">Precio: $ 1799,99</p>
+            <p class="item-detalle-precio">$1799,99 </p>
           </div>
         </div>
-        <div class="carrito__container__cantidad">
-          <input type="text" value="2" name="" id="input-cant" >
-          <div class="carrito__container__cantidad__controles">
-            <button class="controles">+</button>
-            <button class="controles">-</button>
+        <form class="item__cart" action="#" method="POST" enctype="application/x-www-form-urlencoded">
+
+          <div class="carrito__container__cantidad">
+            <input id="quantity" class="item__input" type="text" name="quantity" placeholder="0">
+            <div class="carrito__container__cantidad__controles">
+              <button id="add" class="item__quantity" type="button">+</button>
+              <button id="substract" class="item__quantity"  type="button">-</button>
+            </div>
           </div>
-        </div>
-        <div class="carrito__container__precio">
-          <p>$ 3599,98</p>
+      </form>
+        
+        <div class="carrito__container__precio" id="cont-total">
+          <p>$ 1799,99</p>
           <a href=""><img src="../img/multimedia/icons/delete_trash.svg" alt="close"></a>
         </div>
       </div>
@@ -171,6 +175,7 @@
 </footer>
   <!--Fin Footer-->
   <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.7/dist/iconify-icon.min.js"></script>
+  <script src="../js/item.js"></script>
   
 </body>
 </html>
