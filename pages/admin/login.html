@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Login Funkoshop</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../../css/login.css">
+        <link rel="icon" href="../img/multimedia/branding/isotype.svg" type="image/Funkoshop-icon">
+    </head>
+    <body>
+        <header class="page-header">
+            <nav class="navbar container">
+             <picture class="navbar__logo">
+                 <a href="../index.html">  
+                     <img src="../../img/multimedia/branding/logo_light_horizontal.svg" alt="Isologotipo de la marca Funko Shop"> 
+                 </a>
+             </picture>
+             <ul class="navbar__menu">
+                 <li class="navbar__item with-submenu">
+                     <a href="../shop.html" class="navbar__link with-icon">
+                         VER TIENDA</a>
+                     
+                 </li>
+                 <li class="navbar__item">
+                     <a href="admin.html" class="navbar__link">
+                         ADMIN
+                     </a>
+                 </li>
+                 <li class="navbar__item">
+                     <a href="login.html" class="navbar__link">
+                         SALIR
+                     </a>
+                
+             </ul>
+            </nav>
+        </header> 
+        <main class="container__form__login">
+            <h2 class="form__title">Ingresar a mi cuenta</h2>
+            <form class="login__form" action="/admin/create" method="POST" enctype="application/x-www-form-urlencoded">
+                <div class="form__box--flex">
+                    <label class="form__label" for="email">Email:</label>
+                    <input class="form__input form__text" type="email" name="email" id="email" placeholder="johndoe@correo.com" required>
+                </div>
+                <div class="form__box--flex">
+                    <label class="form__label" for="name">Contraseña:</label>
+                    <input class="form__input form__text" type="password" name="name" id="name" placeholder="Escribe tu contraseña..." required>
+                </div>
+                <div class="form__flex">
+                    <input class="form__btn" type="submit" value="Ingresar" >
+                    <div class="form__remember">
+                        <input type="checkbox" id="recordarContrasena" name="recordarContrasena">
+                        <label class="form__text" for="recordarContrasena">Recordarme</label>
+                    </div>
+                </div>
+                <div class="form__link">
+                    <a class="form__text form__text--link" href="">Olvidé mi contraseña</a>
+                </div>
+            </form>
+        </main>
+        <!--FOOTER-->
+        <footer class="footer">
+            <nav class="navbar container">
+                <ul class="navbar__item">
+                    <li class="navbar__item">
+                        <a class="navbar__link" href="../shop.html">SHOP</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a class="navbar__link" href="register.html">REGISTRARSE</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a class="navbar__link" href="login.html">INGRESAR</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a class="navbar__link" href="../contacto.html">CONTACTO</a>
+                    </li>
+                </ul>
+                <picture>
+                    <img src="../../img/multimedia/branding/isotype.svg" alt="Isotipo de la marca Funkoshop">
+                </picture>
+            </nav>
+            <p class="footer__copy">All rights reserved 2023 - Funkoshop &copy;</p>
+        </footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.8/dist/iconify-icon.min.js"></script>
+    </body>
+</html>
